@@ -1,0 +1,140 @@
+/* import "Inter" font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Font Family */
+  --font-family: "Inter", sans-serif;
+
+  /* Colors */
+  --color-primary: #3563e9;
+  --color-primary-hover: #2552d4;
+  --color-heading-blue: #2b5bd7;
+  --color-text-dark: #2a323d;
+  --color-text-muted: #667085;
+  --color-bg-page: #f5f7fa;
+  --color-bg-card: #ffffff;
+  --color-border: #e2e8f0;
+
+  /* Layout & Shadows */
+  --radius-card: 16px;
+  --radius-input: 8px;
+  --radius-button: 8px;
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-bg-page);
+}
+
+.card {
+  background-color: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-card);
+
+  min-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.logo {
+  background-color: var(--color-primary);
+  color: var(--color-bg-card);
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  margin-bottom: 1rem;
+}
+
+.card h1:nth-child(2) {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+.card:nth-child(2),
+h2 {
+  color: var(--color-primary);
+}
+.card:nth-child(2) h2 {
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 2rem;
+  color: var(--color-text-muted);
+}
+form {
+  width: 100%;
+}
+form label {
+  color: var(--color-text-dark);
+}
+form p {
+  color: red;
+}
+form input,
+form button {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  width: 100%;
+  padding: 0.6rem 0.4rem;
+  border-radius: var(--radius-button);
+  border: 1px solid var(--color-border);
+}
+form button {
+  background-color: var(--color-primary);
+  color: var(--color-bg-card);
+  font-weight: bold;
+}
+button {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card:nth-child(2) button {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  width: 100%;
+  padding: 0.6rem 0.4rem;
+  border-radius: var(--radius-button);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-primary);
+  color: var(--color-bg-card);
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: var(--color-primary-hover);
+}
+.card:nth-child(2) button:hover {
+  background-color: var(--color-primary-hover);
+}
+#username-name {
+  color: var(--color-text-muted);
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h1 class="logo">UI</h1>
+        <h1>Welcome Back</h1>
+        <p>Sign in to continue to your account</p>
+
+        <form action="#">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            autocomplete="username"
+          />
+          <p id="username-error"></p>
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Your password"
+            autocomplete="current-password"
+          />
+          <p id="password-error"></p>
+
+          <button type="submit" id="login">Login</button>
+        </form>
+      </div>
+
+      <div class="card hidden">
+        <h1 class="logo">UI</h1>
+        <h1>Welcome Back</h1>
+        <p>Sign in to continue to your account</p>
+
+        <h2>Welcome, <span id="username-name"></span>!</h2>
+        <p>You have successfully logged in to your account</p>
+
+        <button type="button" id="logout">Logout</button>
+      </div>
+    </main>
+  </body>
+</html>
